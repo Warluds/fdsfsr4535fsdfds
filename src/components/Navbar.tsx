@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const links = [
   { label: "О компании", href: "#about" },
@@ -28,11 +29,15 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
+          <ThemeToggle />
         </div>
 
-        <button onClick={() => setOpen(!open)} className="lg:hidden text-foreground">
-          {open ? <X strokeWidth={2} size={24} /> : <Menu strokeWidth={2} size={24} />}
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
+          <button onClick={() => setOpen(!open)} className="text-foreground">
+            {open ? <X strokeWidth={2} size={24} /> : <Menu strokeWidth={2} size={24} />}
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
