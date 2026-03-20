@@ -29,6 +29,7 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
+          <ThemeToggle />
         </div>
 
         <button onClick={() => setOpen(!open)} className="lg:hidden text-foreground">
