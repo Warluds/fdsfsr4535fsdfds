@@ -86,7 +86,7 @@
   }
 
   .glass-card {
-    @apply bg-card/60 backdrop-blur-xl border border-border;
+    @apply bg-card/70 backdrop-blur-xl border border-border;
   }
 
   .clip-reveal {
