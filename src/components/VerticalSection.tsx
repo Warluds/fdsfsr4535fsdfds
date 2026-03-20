@@ -66,7 +66,7 @@ const VerticalSection = () => (
               transition={{ type: "spring", duration: 0.8, bounce: 0, delay: i * 0.1 }}
               className="relative pl-12 pb-14 last:pb-0 border-l border-border"
             >
-              <div className="absolute -left-[9px] top-0 w-[18px] h-[18px] rounded-full bg-primary border-4 border-background" />
+              <div className="absolute -left-[9px] top-0 w-[18px] h-[18px] rounded-full bg-primary border-4 border-background shadow-sm" />
               <span className="font-mono-data text-primary mb-2 block text-sm">0{i + 1}</span>
               <h4 className="text-xl font-display font-semibold mb-3">{step.title}</h4>
               <p className="text-muted-foreground max-w-md leading-relaxed text-sm">{step.description}</p>
