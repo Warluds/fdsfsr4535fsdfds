@@ -82,7 +82,7 @@
   }
 
   .shadow-heavy {
-    box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.12);
   }
 
   .glass-card {
